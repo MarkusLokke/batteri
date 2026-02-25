@@ -14,10 +14,6 @@ timesnitt = np.zeros((13,24))
 for i in range(int(len(timepris))):
     timepris[i] = np.mean((timepris_temp[i*4],timepris_temp[i*4+1],timepris_temp[i*4+2],timepris_temp[i*4+3]))
 
-"""for k in range(13):
-    for i in range(24):
-        timesnitt[k][i] = np.mean(timepris[i::24])"""
-
 for k in range(13):
     a = int(np.sum(dager[:k])*24)
     b = int(np.sum(dager[:(k+1)])*24+1)
